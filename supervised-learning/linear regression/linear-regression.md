@@ -24,7 +24,7 @@ MSE formula:
 
 $` MSE =(X, h_{\theta} = \frac{1}{m}\sum_{i = 1}^{m} (\theta^{T}x^{(i)} - y^{(i)})^{2} `$  
 
-so we find the value of $`\theta` $ (the parameter vector) so that it minimizes the MSE. how?  
+so we find the value of $`\theta `$ (the parameter vector) so that it minimizes the MSE. how?  
 With Normal Equation.  
 
 ### Normal Equation
