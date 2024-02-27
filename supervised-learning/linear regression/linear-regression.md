@@ -29,4 +29,25 @@ With Normal Equation.
 
 ### Normal Equation
 
-To find the value of $\theta$ that minimizes the MSE, we can get exactly that with Normal Equation.
+To find the value of $` \theta `$ that minimizes the MSE, we can get exactly that with Normal Equation.  
+
+Normal Equation:  
+$`\theta = (X^{T}X)^{-1} X^{T} y `$
+
+Via this equation, we can now have the best theta values.  
+Note that we can use Gradient Descent to enhance this regression.
+
+> Quick math note:
+The inverse of $`A`$ is $`A^{-1}`$ only when:  
+$` AA^{-1} = A^{-1}A = I `$ 
+
+### Some notes
+
+In order to perform linear regression, we need to add a dummy feature aka intercept term. As we mentioned in the formula above, the bias term is $`\theta_{0}`$ which has not multiplied by any column of x. If we add a dummy column 1 as intercept term, then we would have $`x_{0}`$ equal to 1 and then any number multiplied by 1 is equal to the number itself which is going to be $`\theta_{0}`$.
+
+
+
+## Refrences
+
+- [Matrix inversion](https://www.mathsisfun.com/algebra/matrix-inverse.html)
+- [Matrix Transpose](https://mathinsight.org/matrix_transpose)
