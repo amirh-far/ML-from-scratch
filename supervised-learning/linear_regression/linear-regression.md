@@ -22,7 +22,7 @@ It is simpler to use MSE (mean squared error) instead of the RMSE and it leads t
 
 MSE formula:
 
-$` MSE =(X, h_{\theta} = \frac{1}{m}\sum_{i = 1}^{m} (\theta^{T}x^{(i)} - y^{(i)})^{2} `$  
+$` MSE =(X, h_{\theta}) = \frac{1}{m}\sum_{i = 1}^{m} (\theta^{T}x^{(i)} - y^{(i)})^{2} `$  
 
 so we find the value of $`\theta `$ (the parameter vector) so that it minimizes the MSE. how?  
 With Normal Equation.  
@@ -44,6 +44,10 @@ $` AA^{-1} = A^{-1}A = I `$
 ### Some notes
 
 In order to perform linear regression, we need to add a dummy feature aka intercept term. As we mentioned in the formula above, the bias term is $`\theta_{0}`$ which has not multiplied by any column of x. If we add a dummy column 1 as intercept term, then we would have $`x_{0}`$ equal to 1 and then any number multiplied by 1 is equal to the number itself which is going to be $`\theta_{0}`$.
+
+#### How the algorithm is applied
+
+So what we do in the simplest form of linear regression without any regularization, we have to choose the cost function; which we use MSE. Then, in order to calculate the parameter vector (in our case the $`\theta`$ vector) with this cost function, we use the Normal Equation which is: $`\theta = (X^{T}X)^{-1} X^{T} y `$. This function, minimizes the Mean Squared Error.
 
 
 
