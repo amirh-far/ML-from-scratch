@@ -49,9 +49,9 @@ In order to perform linear regression, we need to add a dummy feature aka interc
 
 So what we do in the simplest form of linear regression without any regularization, we have to choose the cost function; which we use MSE. Then, in order to calculate the parameter vector (in our case the $`\theta`$ vector) with this cost function, we use the Normal Equation which is: $`\theta = (X^{T}X)^{-1} X^{T} y `$. This function, minimizes the Mean Squared Error.
 
-
-
 ## Refrences
 
+- [Hands on Machine Learning Book](https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1098125975)
+- [100 page ML book](https://www.amazon.com/Hundred-Page-Machine-Learning-Book/dp/199957950X)
 - [Matrix inversion](https://www.mathsisfun.com/algebra/matrix-inverse.html)
 - [Matrix Transpose](https://mathinsight.org/matrix_transpose)
