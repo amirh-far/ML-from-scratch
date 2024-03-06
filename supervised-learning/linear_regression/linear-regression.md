@@ -39,7 +39,7 @@ Note that we can use Gradient Descent to enhance this regression.
 
 > Quick math note:
 The inverse of $`A`$ is $`A^{-1}`$ only when:  
-$` AA^{-1} = A^{-1}A = I `$ 
+$` AA^{-1} = A^{-1}A = I `$
 
 ### Some notes
 
@@ -49,9 +49,23 @@ In order to perform linear regression, we need to add a dummy feature aka interc
 
 So what we do in the simplest form of linear regression without any regularization, we have to choose the cost function; which we use MSE. Then, in order to calculate the parameter vector (in our case the $`\theta`$ vector) with this cost function, we use the Normal Equation which is: $`\theta = (X^{T}X)^{-1} X^{T} y `$. This function, minimizes the Mean Squared Error.
 
+## Batch Gradient Descent
+
+Previously we used normal equation to calculate the parameter vector. This approach has its own ups and downs. This approach is limited and its usage is mostly on small datasets.  
+The more frequent approach is using Gradient Descent because this approach does better in large datasets and feature scaling can be performed in this approach. For more adv & disadv check the refrences.  
+
+### How does Gradient Descent work?
+
+This algorithm, calculates the Gradient of the loss function and moves towards the descending of the loss function. In other words, it will calculate the minimum of the loss function. As the name applies, the Gradient is the partial derivative of the loss function w.r.t to each parameter.  
+We use the MSE this time and doing a partial derivative from MSE w.r.t the parameter vector is equal to:  
+$`\frac{\partial MSE}{\partial \theta} = X^{T}(X\theta - y) `$
+
+
 ## Refrences
 
 - [Hands on Machine Learning Book](https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1098125975)
 - [100 page ML book](https://www.amazon.com/Hundred-Page-Machine-Learning-Book/dp/199957950X)
 - [Matrix inversion](https://www.mathsisfun.com/algebra/matrix-inverse.html)
 - [Matrix Transpose](https://mathinsight.org/matrix_transpose)
+- [Gradient Descent vs. Normal Equation](https://www.geeksforgeeks.org/difference-between-gradient-descent-and-normal-equation/)
+- [Gradient Descent, Step-by-Step video(recommended!)](https://www.youtube.com/watch?v=sDv4f4s2SB8)
