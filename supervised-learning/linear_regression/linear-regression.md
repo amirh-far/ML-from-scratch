@@ -52,14 +52,13 @@ So what we do in the simplest form of linear regression without any regularizati
 ## Batch Gradient Descent
 
 Previously we used normal equation to calculate the parameter vector. This approach has its own ups and downs. This approach is limited and its usage is mostly on small datasets.  
-The more frequent approach is using Gradient Descent because this approach does better in large datasets and feature scaling can be performed in this approach. For more adv & disadv check the refrences.  
+The more frequent approach is using Gradient Descent because this approach does better in large datasets and feature scaling can be performed in this approach. For more advantages & disadvantages check the refrences section.  
 
 ### How does Gradient Descent work?
 
 This algorithm, calculates the Gradient of the loss function and moves towards the descending of the loss function. In other words, it will calculate the minimum of the loss function. As the name applies, the Gradient is the partial derivative of the loss function w.r.t to each parameter.  
 We use the MSE this time and doing a partial derivative from MSE w.r.t the parameter vector is equal to:  
 $`\frac{\partial MSE}{\partial \theta} = X^{T}(X\theta - y) `$
-
 
 ## Refrences
 

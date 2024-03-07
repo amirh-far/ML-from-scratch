@@ -1,8 +1,6 @@
 import numpy as np
 import math
 
-class GradientDescent:
-    pass
 
 # simplest form of linear regression via normal equation and least squares as cost function
 class LinearRegression:
@@ -22,6 +20,7 @@ class LinearRegression:
         y_pred = X_b @ self.w
         return y_pred
 
+
 # linear regression applied with batch gradient descent
 class BatchGradientLinearRegression:
     def __init__(self, learning_rate=0.01, n_epoch=100) -> None:
@@ -34,6 +33,7 @@ class BatchGradientLinearRegression:
         self.w = np.random.uniform(-limit, limit, (n_features, ))        
     
     def fit(self, X:np.ndarray, y:np.ndarray):
+        """ calculate the parameter vector via batch gradient descent"""
         X_b = np.insert(arr=X, obj=0, values=1, axis=1)
         n_features = X.shape[1]
         # initialize the weight with random numbers
