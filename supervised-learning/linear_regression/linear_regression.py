@@ -28,9 +28,9 @@ class BatchGradientLinearRegression:
         self.n_epoch = n_epoch
     
     def initialize_weights(self, n_features) -> None:
-        """ initialize the weights randomly (from eriklindernoren)"""
+        """ initialize the weights randomly (from eriklindernoren/ml-from-scratch (function is changed))"""
         limit = 1 / math.sqrt(n_features)
-        self.w = np.random.uniform(-limit, limit, (n_features, ))        
+        self.w = np.random.uniform(-limit, limit, (1, n_features))        
     
     def fit(self, X:np.ndarray, y:np.ndarray):
         """ calculate the parameter vector via batch gradient descent"""

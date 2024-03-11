@@ -6,10 +6,10 @@ $` y = \theta_{0} + \theta_{1}x_{1} + \theta_{2}x_{2} + ... + \theta_{n}x_{n}   
 where $\theta_{0}$ is the bias term and other thetas are the feature weights.  
   
 which is equal to:  
-$` y = h_{\theta}(x) = \theta . x `$  
+$` y = h_{\theta}(x) = \theta^{T} . x `$  
   
 $` h_{\theta}(x) `$ is the hypothesis function  
-$` \theta `$ is the parameter vector  
+$` \theta `$ is the parameter vector    
 
 ## Parameters
 
