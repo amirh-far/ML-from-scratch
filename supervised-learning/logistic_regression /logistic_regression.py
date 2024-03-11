@@ -36,11 +36,10 @@ class BatchGDLogisticRegression():
         X_b = np.insert(arr=X, obj=0, values=1, axis=1)
 
         # predict the values via the weights, input matrix using sigmoid function
-        pred_values = self.sigmoid(X_b @ self.w)
+        # and then, classify the predictions
+        y = np.round(self.sigmoid(X_b @ self.w)).astype(int)
         
-        # classify the predictions
-        y = np.array([1 if pred >= 0.5 else 0 for pred in pred_values])
-        
+        # y = np.array([1 if pred >= 0.5 else 0 for pred in pred_values])
         return y
 
 
