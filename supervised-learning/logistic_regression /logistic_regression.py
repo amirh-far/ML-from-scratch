@@ -41,12 +41,3 @@ class BatchGDLogisticRegression():
         
         # y = np.array([1 if pred >= 0.5 else 0 for pred in pred_values])
         return y
-
-
-
-        
-
-
-
-
-        
